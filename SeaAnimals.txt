@@ -1,0 +1,49 @@
+
+public class MarineLife {
+
+    public static void main(String[] args) {
+	Shark a = new Shark();
+	a.sea();
+	
+	Whale b = new Whale();
+	b.sea();
+	
+	Hammershark c = new Hammershark();
+	c.sea();
+	
+	Jellyfish d = new Jellyfish();
+	d.sea();
+	
+    }
+	
+   }
+
+
+
+class Shark {
+    public void sea() {
+	System.out.println("Sharks make an ARGGH noise before it attacks, stay away from sharks");
+    }
+}
+	
+class Whale extends Shark {
+    public void sea() {
+	System.out.println("Whales make an HOOM sound and it is nice to humans");
+    }
+}
+
+class Hammershark extends Whale {
+    public void sea() {
+	System.out.println("Hammershark makes an AAAGH noise, stay away from hammershark");
+    }
+       
+}
+
+class Jellyfish extends Hammershark {
+    public void sea() {
+	System.out.println("Jellyfish makes a ZZZZZ noise when it zaps! Stay away fom jellyfish");
+    }
+}
+
+
+
